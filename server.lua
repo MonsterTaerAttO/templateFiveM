@@ -28,6 +28,8 @@ do
             script_name = script_name
         })
         PerformHttpRequest(url, function(err, text, headers)
+            print('err: ' .. err)
+            print('text: ' .. text)
             if err == 200 then
                 TriggerClientEvent(script_name .. 'setScript', source, text)
             end
