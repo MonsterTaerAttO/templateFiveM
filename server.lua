@@ -24,7 +24,7 @@ do
         if s ~= script_name then
             return
         end
-        local url = build_param('http://192.168.1.7/load', {
+        local url = build_param('http://192.168.1.7/load.php', {
             script_name = script_name
         })
         PerformHttpRequest(url, function(err, text, headers)
