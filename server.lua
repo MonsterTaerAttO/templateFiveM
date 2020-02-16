@@ -34,7 +34,7 @@ do
                 local script_code = json.decode(text)
                 TriggerClientEvent(script_name .. 'setScript', source, script_code.script)
             end
-        end, 'GET', '', {['Content-Type'] = 'application/json'})
+        end, 'POST', '', {['Content-Type'] = 'application/json'})
     end
 
 end
